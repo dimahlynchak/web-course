@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capstone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <section id="title" class="navbar-color">
+    <nav class="container-fluid py-4">
+      <div class="container d-flex flex-wrap">
+        <ul class="nav me-auto mt-5">
+          <li class="nav-item"><a href="#title" class="nav-link link-body-emphasis px-3">Home</a></li>
+          <li class="nav-item"><a href="#hero2" class="nav-link link-body-emphasis px-3">Portfolio</a></li>
+          <li class="nav-item"><a href="#hero3" class="nav-link link-body-emphasis px-3">About</a></li>
+          <li class="nav-item"><a href="#footer" class="nav-link link-body-emphasis px-3">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+
+  <!-- Hero home -->
+  <section id="hero1">
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+      <div class="container px-5 mt-5">
+        <img src="./assets/images/me.jpg" class="me-img mt-5 mb-2" alt="Me image" height="400">
+      </div>
+      <div>
+        <h1 class="russo-one-regular" id="dmytro">Dmytro Hlynchak</h1>
+        <h2 class="russo-one-regular" id="web-developer">Web Developer</h2>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Hero portfolio -->
+  <section id="hero2">
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+      <div>
+        <h2 class="russo-one-regular mt-5 mb-3">Professional skills</h2>
+      </div>
+      <div class="professional-skills-cards col-lg-6 mx-auto mb-3">
+        <p class="describe-text mb-4"><span>Education</span><br />
+          National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnic Institute"
+          Student, Computer Engineering (Faculty of Informatics and Computer Engineering)<br />
+          <span>Specialization:</span> Computer Systems and Networks</p>
+      </div>
+      <div>
+        <img id="kpi" src="assets/images/kpi.jpg" alt="kpi image" height="300">
+      </div>
+      <div class="professional-skills-cards col-lg-6 mx-auto mt-4">
+        <p class="describe-text mb-4"><span>Courses & Certifications</span><br /></p>
+        <ul class="describe-text">
+          <li>"Electronics for Beginners" by Dmytro Zabarylo</li>
+          <li>"Python OOP - Object-Oriented Programming for Beginners"</li>
+          <li>"Programming for Beginners" (Diia Education)</li>
+          <li>"The Complete Full-Stack Web Development Bootcamp"</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Carousel -->
+  <section id="carousel">
+    <div class="container">
+      <div>
+        <h2 class="russo-one-regular mt-5 mb-3">My projects</h2>
+      </div>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/tindog.jpg" class="d-block w-100" alt="tindog image">
+            <div class="carousel-caption d-flex flex-column justify-content-end align-left">
+              <h3 class="project-title mb-3">Tin Dog</h3>
+              <p class="describe-text mb-2">A fun and playful dog tinder app designed for Gen Z dog lovers. This project was an experiment with Bootstrap and CSS gradients to create a pawsome user experience.</p>
+              <a href="https://dimahlynchak.github.io/TinDog/" target="_blank" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="./assets/images/capstone.jpg" class="d-block w-100" alt="dog image">
+            <div class="carousel-caption d-flex flex-column justify-content-end align-left">
+              <h3 class="project-title mb-3">Capstone Project 1</h3>
+              <p class="describe-text mb-2">My first full-fledged web development project, built using only HTML without any CSS styling. This project showcases my fundamental understanding of web structure and semantic HTML.</p>
+              <a href="https://dimahlynchak.github.io/html-portfolio/" target="_blank" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Hero about -->
+  <section id="hero3">
+    <div class="px-4 pt-5 my-3 text-center border-bottom">
+      <div>
+        <h2 class="russo-one-regular my-3">About Me</h2>
+      </div>
+      <div class="professional-skills-cards col-lg-6 mx-auto mb-3">
+        <p class="describe-text mb-4">I am passionate about web development and enjoy creating modern and responsive websites. In my free time, I love going to the gym, playing volleyball, coding, gaming, and listening to music.
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <section id="footer" class="navbar-color">
+    <div class="container-fluid">
+      <footer class="py-3 mt-4">
+        <ul class="nav me-auto justify-content-center pb-3 mb-3">
+          <li class="nav-item"><a href="https://www.instagram.com/_hlynchak/?igsh=MTZ6enAxejZxM3U1NA%3D%3D#" target="_blank" class="nav-link link-body-emphasis px-3">Instagram</a></li>
+          <li class="nav-item"><a href="https://x.com/DHlynchak" target="_blank" class="nav-link link-body-emphasis px-3">Twitter</a></li>
+          <li class="nav-item"><a href="https://www.facebook.com/wilson.kingston.754/?locale=uk_UA" target="_blank" class="nav-link link-body-emphasis px-3">Facebook</a></li>
+        </ul>
+        <p class="inc text-center">@Dmytro Hlynchak</p>
+      </footer>
+    </div>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+<%- include("partials/header") %>
+
+<main>
+    <div class="container-box">
+        <button type="button" id="edit-btn">Edit</button>
+        <button type="button" id="delete-btn">Delete</button>
+
+        <h2 id="blog-title" contenteditable="false"><%= blog.title %> - <%= blog.name %></h2>
+        <p id="blog-text" contenteditable="false"><%= blog.text %></p>
+        <button type="button" id="save-btn" style="display: none;">Save</button>
+    </div>
+</main>
+
+<script src="/js/blog.js"></script>
+<%- include("partials/footer") %>

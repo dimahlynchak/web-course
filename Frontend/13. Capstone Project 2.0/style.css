@@ -1,0 +1,154 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #d9d9d9;
+}
+
+.navbar-color {
+  background-color: #004aad;
+  width: 100vw;
+
+}
+
+.nav-link {
+  color: #d9d9d9;
+  font-size: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
+.inc {
+  color: #d9d9d9;
+  font-size: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
+.me-img {
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.russo-one-regular {
+  font-family: "Russo One", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #004aad;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: clamp(2rem, 7vw, 3rem);
+  text-align: center;
+}
+
+.headers-container {
+  margin: 0 auto;
+  text-align: left;
+  white-space: nowrap;
+}
+
+#web-developer {
+  font-size: 1.5rem;
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
+#dmytro {
+  font-size: clamp(2rem, 7vw, 3rem);
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
+span {
+  font-weight: bold;
+}
+
+.describe-text {
+  font-size: 1.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  text-align: left;
+  color: black;
+}
+
+.project-title {
+  font-size: 3rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  text-align: left;
+  color: black;
+}
+
+.professional-skills-cards{
+  background-color: #004aad1a;
+  padding: 1.5rem;
+  border: 0.3rem solid lightgray;
+}
+
+.carousel-caption {
+  top: 10%;
+  bottom: auto;
+  height: auto; /* Динамічна висота */
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  overflow: visible; /* Запобігає обрізанню тексту */
+  padding: 10px; /* Додає трохи простору */
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+  white-space: normal; /* Текст не повинен ламатися */
+  word-wrap: break-word; /* Запобігає виходу тексту за межі */
+}
+
+.carousel-item {
+  min-height: 400px; /* Мінімальна висота, щоб текст мав місце */
+}
+
+.carousel-item img {
+  opacity: 0.11;
+  object-fit: cover; /* Фото зберігає пропорції, не стискається */
+}
+
+@media (max-width: 768px) {
+  .me-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  img[alt="kpi image"] {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 470px) {
+  .carousel-caption {
+    font-size: 1rem; /* Зменшує розмір тексту для менших екранів */
+    padding: 5px;
+  }
+
+  .describe-text{
+    font-size: 1rem;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.5rem;
+  }
+}
+

@@ -1,0 +1,17 @@
+<%- include("partials/header") %>
+
+<div class="container-box">
+    <h1>Blogs</h1>
+
+    <ul class="blog-list">
+        <% blogs.forEach(blog => { %>
+            <li>
+                <a href="/blogs/<%= encodeURIComponent(blog.title) %>-<%= encodeURIComponent(blog.name.trim()) %>">
+                    <%= blog.title %> - <%= blog.name %>
+                </a>
+            </li>
+        <% }) %>
+    </ul>
+</div>
+
+<%- include("partials/footer") %>

@@ -1,0 +1,119 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 20px;
+    background: #ffffff;
+}
+
+.container-box {
+    width: 100%;
+    max-width: 800px;
+}
+
+.navbar-color,
+#footer {
+    background: #004aad;
+    color: #d9d9d9;
+}
+
+.nav-link,
+.custom-link {
+    color: #d9d9d9 !important;
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.inc {
+    font-size: 0.9rem;
+}
+
+h1, h2, h3 {
+    font-family: "Russo One", sans-serif;
+    color: #004aad;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 200px;
+    resize: vertical;
+}
+
+button,
+input[type="submit"] {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 24px;
+    background: #014ebd;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: #013a90;
+}
+
+#edit-btn {
+    border-radius: 6px;
+}
+
+#save-btn {
+    border-radius: 6px;
+}
+
+#delete-btn {
+    border-radius: 6px;
+}
+
+ul.blog-list {
+    list-style: none;
+    padding: 0;
+}
+
+ul.blog-list li {
+    margin-bottom: 12px;
+}
+
+ul.blog-list a {
+    font-weight: 700;
+    color: #014ebd;
+    text-decoration: none;
+}
+
+ul.blog-list a:hover {
+    text-decoration: underline;
+}

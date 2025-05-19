@@ -1,0 +1,23 @@
+<%- include("partials/header")%>
+
+<div class="container-box">
+    <form action="/submit" method="POST">
+        <div class="form">
+            <label for="name">Enter your name: </label>
+            <input type="text" name="name" id="name" required />
+        </div>
+        <div class="form">
+            <label for="blog-name">Enter Your blog name: </label>
+            <input type="text" name="blog-name" id="blog-name" required />
+        </div>
+        <div class="form">
+            <label for="blog-text">Enter Your blog text: </label>
+            <textarea name="blog-text" id="blog-text" required></textarea>
+        </div>
+        <div class="form">
+            <input type="submit" value="Post Blog" />
+        </div>
+    </form>
+</div>
+
+<%- include("partials/footer")%>
